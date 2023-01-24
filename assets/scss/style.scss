@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+@mixin flex-center(){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body{
+    background-color: #2061CB;
+    height: 100vh;
+    @include flex-center();
+    .container{
+        width: 40%;
+        min-height: 500px;
+        background-color: #fff;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        #task{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 90px;
+            input{
+                width: 75%;
+                height: 50px;
+                border: 2px solid #2061CB;
+                border-radius: 10px;
+                padding:10px;
+                font-size: 18px;
+                outline: none;
+            }
+            button{
+                width: 20%;
+                height: 50px;
+                border-radius: 10px;
+                background-color: #2061CB;
+                color: #fff;
+                font-size: 18px;
+                border: none;
+                cursor: pointer;
+            }
+        }
+        #addtask{
+            .addtaskcontent{
+                width: 100%;
+                height: 50px;
+                background-color:#C2DEE2;
+                border: 1px solid gray;
+                padding: 10px;
+                border-radius: 10px;
+                font-size: 20px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-bottom: 10px;
+                button{
+                    width: 35px;
+                    height: 35px;
+                    border-radius: 5px;
+                    background-color: #1C2394;
+                    color: #fff;
+                    border: none;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
