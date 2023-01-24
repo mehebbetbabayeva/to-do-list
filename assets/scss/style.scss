@@ -78,10 +78,13 @@ body{
 
 @media screen and (min-width:320px)and (max-width:480px){
     body{
+        
         width: 100%;
-        justify-content: flex-start;
+        
+        align-items: flex-start;
         .container{
-            width: 100%;
+            width: 90%;
+            height: 100%;
         }
     }
 }
