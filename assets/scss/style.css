@@ -69,4 +69,14 @@ body .container #addtask .addtaskcontent button {
   color: #fff;
   border: none;
   cursor: pointer;
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  body {
+    width: 100%;
+    justify-content: flex-start;
+  }
+  body .container {
+    width: 100%;
+  }
 }/*# sourceMappingURL=style.css.map */
